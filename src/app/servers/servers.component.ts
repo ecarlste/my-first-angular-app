@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ServersComponent implements OnInit {
 
   allowNewServer = false;
-  serverCreationStatus = 'not created';
+  serverCreated = false;
   serverName = '';
 
   constructor() {
@@ -21,7 +21,7 @@ export class ServersComponent implements OnInit {
   }
 
   onCreateServer() {
-    this.serverCreationStatus = 'Server ' + this.serverName + ' created';
+    this.serverCreated = true;
   }
 
 }
